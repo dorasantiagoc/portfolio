@@ -6,52 +6,41 @@ import {
   NSNLogo,
   ParabolLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Dora Santiago",
+  location: "Recife, Pernambuco, Brasil",
+  locationLink: "https://www.google.com/maps/place/Recife",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Sixth semester Computer Science student looking for a new challenge.",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+      Frontend-focused developer with a passion for creating clean React and TypeScript interfaces. Strong eye for UI/UX design, Figma skills, and a fast learner. Actively seeking internship opportunities.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "dorasantiagoc@gmail.com",
+    tel: "+5581991442781",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/dorasantiagoc",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/dora-santiago/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Centro Universitário União das Américas Descomplica",
+      degree: "Bachelor's Degree in Computer Science",
+      start: "2023",
+      end: "present",
     },
   ],
   work: [
@@ -182,28 +171,20 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "React/Next.js/Remix",
+    "React/Next.js",
     "TypeScript",
     "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "UI/UX Design",
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Do Resenhas",
+      techStack: ["TypeScript", "Next.js", "Tailwind CSS",],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      logo: MonitoLogo,
+        "Personal website for tracking and showcasing book reviews. Features a clean UI, review submission flow, and dynamic display of recently read books. Built with React and TypeScript.",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "doresenhas.dev",
+        href: "https://doresenhas.vercel.app",
       },
     },
     {
@@ -220,7 +201,6 @@ export const RESUME_DATA = {
       ],
       description:
         "Platform for online consultations with real-time video meetings and scheduling",
-      logo: ConsultlyLogo,
       link: {
         label: "consultly.com",
         href: "https://consultly.com/",
@@ -231,7 +211,6 @@ export const RESUME_DATA = {
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
       description:
         "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      logo: MonitoLogo,
       link: {
         label: "Minimalist CV",
         href: "https://github.com/BartoszJarocki/cv",
@@ -239,3 +218,5 @@ export const RESUME_DATA = {
     },
   ],
 } as const;
+
+
