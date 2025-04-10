@@ -200,7 +200,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Basic Operations Calculator",
+      title: "Basic Calculator",
       techStack: ["JavaScript", "Vue.js"],
       description:
         "Basic calculator for performing the four arithmetic operations. Users select two numbers and an operation to instantly receive the calculated result.",
