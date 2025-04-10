@@ -181,39 +181,32 @@ export const RESUME_DATA = {
       title: "Do Resenhas",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS",],
       description:
-        "Personal website for tracking and showcasing book reviews. Features a clean UI, review submission flow, and dynamic display of recently read books. Built with React and TypeScript.",
+        "Personal website for organizing and displaying book reviews. Created as a way to share my love for reading, with a focus on clean presentation and easy navigation through recent reads.",
       link: {
-        label: "doresenhas.dev",
+        label: "doresenhas.vercel.app",
         href: "https://doresenhas.vercel.app",
       },
     },
     {
-      title: "Consultly",
+      title: "Average Calculator",
       techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
+        "JavaScript",
       ],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "Grade calculator for tracking academic performance. Allows input of assignment scores, automatically calculates the final average, and indicates whether the student has passed.",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "average-tool.vercel.app",
+        href: "https://average-tool.vercel.app",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "Basic Operations Calculator",
+      techStack: ["JavaScript", "Vue.js"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "Basic calculator for performing the four arithmetic operations. Users select two numbers and an operation to instantly receive the calculated result.",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "calculator-op.vercel.app",
+        href: "https://calculator-op.vercel.app",
       },
     },
   ],
