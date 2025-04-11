@@ -43,6 +43,26 @@ export const RESUME_DATA = {
       end: "present",
     },
   ],
+  courses: [
+    {
+      degree: "Full Stack Java Developer",
+      school: "EBAC (Escola Britânica de Artes Criativas e Tecnologia)",
+      start: "2023",
+      end: "present",
+    },
+    {
+      degree: "Introduction to Programming",
+      school: "EBAC (Escola Britânica de Artes Criativas e Tecnologia)",
+      start: "2023",
+      end: "2024",
+    },
+    {
+      degree: "Algorithms and Programming Logic",
+      school: "Udemy",
+      start: "2023",
+      end: "2024",
+    },
+  ],
   work: [
     {
       company: "Film.io",
