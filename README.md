@@ -1,7 +1,3 @@
-# Developer Portfolio Template
-
-Minimalist, multilingual portfolio template built with React + TypeScript + Vite.
-
 ## Stack
 
 - React 19
