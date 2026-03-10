@@ -41,6 +41,18 @@ const App: React.FC = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.05 }}
         >
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+            {t.sections.designProjects}
+          </h2>
+          <Projects projects={t.designProjects} />
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+        >
+          <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
             {t.sections.experience}
           </h2>
           <Experience />

@@ -13,11 +13,11 @@ const skillsPt = [
   'React',
   'Node.js',
   'Next.js',
-  'NestJS',
-  'PostgreSQL',
-  'Docker',
-  'AWS',
-  'CI/CD'
+  'UI/UX Design',
+  'Design Systems',
+  'Auto Layout',
+  'Acessibilidade',
+  'Python',
 ];
 
 const skillsEn = [
@@ -25,11 +25,11 @@ const skillsEn = [
   'React',
   'Node.js',
   'Next.js',
-  'NestJS',
-  'PostgreSQL',
-  'Docker',
-  'AWS',
-  'CI/CD'
+  'UI/UX Design',
+  'Design Systems',
+  'Auto Layout',
+  'Acessibilidade',
+  'Python',
 ];
 
 const skillsEs = [
@@ -37,34 +37,35 @@ const skillsEs = [
   'React',
   'Node.js',
   'Next.js',
-  'NestJS',
-  'PostgreSQL',
-  'Docker',
-  'AWS',
-  'CI/CD'
+  'UI/UX Design',
+  'Design Systems',
+  'Auto Layout',
+  'Acessibilidade',
+  'Python',
 ];
 
 export const TRANSLATIONS: Record<Locale, TranslationContent> = {
   'pt-BR': {
     sections: {
       about: 'Sobre',
-      projects: 'Projetos em Destaque',
-      experience: 'Experiencia Profissional',
-      stack: 'Stack Tecnica',
-      education: 'Formacao',
+      projects: 'Projetos de Programação',
+      designProjects: 'Projetos de Design',
+      experience: 'Experiência Profissional',
+      stack: 'Stack',
+      education: 'Formação',
       languages: 'Idiomas'
     },
     hero: {
-      name: 'Seu Nome',
-      role: 'Seu Cargo Principal',
-      nationality: 'Sua Nacionalidade',
-      location: 'Sua Cidade, Pais',
-      phone: '+55 (00) 00000-0000',
-      email: 'voce@seudominio.com',
+      name: 'Dora Santiago',
+      role: 'UI/UX Designer e Desenvolvedora',
+      nationality: 'Brasileira',
+      location: 'Recife, Brasil',
+      phone: '+55 (81) 99144-2781',
+      email: 'dorasantiagoc@gmail.com',
       about: [
-        'Escreva aqui um resumo curto sobre quem voce e e qual problema voce resolve.',
-        'No segundo paragrafo, explique sua especialidade tecnica e sua forma de trabalho.',
-        'No terceiro, destaque impacto de negocio, lideranca tecnica e resultados concretos.'
+        'Designer e desenvolvedora front-end, apaixonada por criar experiências digitais intuitivas e criativas, em busca de um ambiente colaborativo e desafiador.',
+        'Minha especialidade está no desenvolvimento de interfaces e na criação de experiências digitais bem estruturadas, utilizando ferramentas como Figma para prototipação e construção de Design Systems com Auto Layout. No desenvolvimento, trabalho com HTML, CSS e JavaScript para transformar layouts em interfaces funcionais e responsivas.',
+        'Também estou ampliando meus conhecimentos em React e Python, buscando evoluir constantemente minhas habilidades técnicas e criar soluções digitais cada vez mais eficientes e bem estruturadas.'
       ]
     },
     actions: {
@@ -74,100 +75,134 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
     projects: [
       {
         id: 'project-one',
-        title: 'Projeto 01',
-        url: 'https://seu-projeto.com',
-        tagline: 'Tagline curta com proposta de valor.',
-        description: 'Descreva o projeto, o contexto, as tecnologias e o resultado principal em uma frase clara.',
+        title: 'Habit Tracker',
+        url: 'https://habit-tracking-web.vercel.app',
+        tagline: 'Aplicativo web simples para acompanhar hábitos diários de forma visual e intuitiva.',
+        description: 'Desenvolvida com React, Next.js e TypeScript para registrar e acompanhar hábitos diários, com interface responsiva construída com shadcn/ui e foco em usabilidade e aprendizado de tecnologias modernas de front-end.',
         bullets: [
-          'Stack principal e arquitetura adotada.',
-          'Desafio tecnico mais relevante e como foi resolvido.',
-          'Resultado mensuravel obtido com o projeto.'
+          'Next.js, React e TypeScript com UI em shadcn/ui.',
+          'Aplicação funcional para gestão simples de hábitos.',
+          'Integração e adaptação de componentes da biblioteca shadcn/ui.'
         ]
       },
       {
         id: 'project-two',
-        title: 'Projeto 02',
-        url: 'https://seu-projeto.com',
-        tagline: 'Produto digital com foco em escalabilidade.',
-        description: 'Use este espaco para mostrar dominio tecnico e pensamento de produto.',
+        title: 'doresenhas',
+        url: 'https://doresenhas.vercel.app',
+        tagline: 'Site pessoal para organizar e compartilhar resenhas de livros.',
+        description: 'Website desenvolvido com Next.js e TypeScript para organizar e exibir resenhas de livros com navegação simples e apresentação visual limpa.',
         bullets: [
-          'Automacao de fluxo critico do negocio.',
-          'Melhoria de performance e observabilidade.',
-          'Evolucao de experiencia de usuario orientada por dados.'
+          'Next.js, TypeScript e Tailwind CSS.',
+          'Plataforma funcional para publicar e navegar por resenhas de livros.',
+          'Implementação de biblioteca de componentes e interação personalizada nos cards.'
         ]
       },
       {
         id: 'project-three',
-        title: 'Projeto 03',
-        url: 'https://seu-projeto.com',
-        tagline: 'Ferramenta interna para acelerar operacoes.',
-        description: 'Mostre como voce entrega valor de forma pragmatica e sustentavel.',
+        title: 'Average Calculator',
+        url: 'https://average-tool.vercel.app',
+        tagline: 'Calculadora simples para acompanhar médias acadêmicas.',
+        description: 'Aplicação em JavaScript que permite inserir notas de atividades, calcular automaticamente a média final e indicar se o aluno foi aprovado.',
         bullets: [
-          'Padronizacao de processos e reducao de retrabalho.',
-          'Integracao com APIs e servicos externos.',
-          'Documentacao e governanca tecnica.'
+          'JavaScript com lógica de cálculo.',
+          'Ferramenta funcional para cálculo automático de médias.',
+          'Implementação da lógica de cálculo e validação das notas.'
         ]
+      }
+    ],
+    designProjects: [
+      {
+        id: 'design-project-one',
+        title: 'LIA: Explorador de Ecossistemas com IA',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=464-4750',
+        tagline: 'Plataforma educacional interativa para explorar ecossistemas com apoio de IA.',
+        description: 'Projeto de UI/UX desenvolvido no Figma para uma plataforma educacional voltada a estudantes do ensino fundamental e médio, com navegação por ecossistemas, interação com IA e sistema de conquistas.',
+        bullets: ['Design de interface no Figma com componentes e Auto Layout.',
+          'Protótipo completo com fluxo de navegação e telas principais da plataforma.',
+          'Pesquisa de UX e acessibilidade aplicada ao design da interface.']
+      },
+      {
+        id: 'design-project-two',
+        title: 'Tracker',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=464-4750',
+        tagline: 'Dashboard para acompanhar e analisar hábitos de leitura.',
+        description: 'Aplicação web para registrar leituras e visualizar métricas como quantidade anual de livros, diversidade de autoria e categorias literárias, com dashboard interativo e gerenciamento completo das leituras.',
+        bullets: ['Design de interface no Figma com componentes e Auto Layout.',
+          'Dashboard funcional com cadastro, edição e exportação de leituras.',
+          'Criação de componentes do zero e implementação do fluxo completo de gerenciamento de leituras.']
+      },
+      {
+        id: 'design-project-three',
+        title: 'Pricing Page',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=324-1786',
+        tagline: 'Estudo de interface de página de precificação de planos de assinatura.',
+        description: 'Estudo de design focado na criação de um componente de pricing para um site fictício, apresentando três planos com hierarquia visual clara e navegação direta.',
+        bullets: ['Componentes customizados com UI baseada em shadcn/ui.',
+          'Componente reutilizável para exibição e comparação de planos.',
+          'Construção de hierarquia visual e componentes do zero para clareza na tomada de decisão.']
       }
     ],
     experiences: [
       {
-        company: 'Empresa Atual',
-        location: 'Remoto / Cidade, Pais',
-        role: 'Cargo Atual',
-        period: '01/2024 - Presente',
+        company: 'Freelance',
+        location: 'Remoto',
+        role: 'UI/UX Designer',
+        period: '08/2024 - Presente',
         bullets: [
-          'Liderou entregas de alto impacto em produto e engenharia.',
-          'Melhorou confiabilidade com testes, observabilidade e padroes.',
-          'Apoiou decisoes de arquitetura com foco em escala e manutencao.'
+          'Desenvolvimento de interfaces digitais com foco em usabilidade e experiência do usuário.',
+          'Design de telas para web e mobile, com prototipação em Figma e uso de design systems.',
+          'Criação e documentação de componentes reutilizáveis para interfaces consistentes.'
         ]
       },
       {
-        company: 'Empresa Anterior',
-        location: 'Cidade, Pais',
-        role: 'Cargo Anterior',
-        period: '01/2022 - 12/2023',
+        company: 'Descomplica',
+        location: 'Remoto',
+        role: 'Assistente Pedagógica',
+        period: '06/2021 - 09/2023',
         bullets: [
-          'Construiu funcionalidades estrategicas em colaboracao com produto.',
-          'Reduziu custos operacionais com automacoes tecnicas.',
-          'Mentorou pessoas do time em boas praticas de desenvolvimento.'
+          'Análise e edição de materiais pedagógicos. Suporte na organização e apresentação de dados.',
+          'Auxílio para conduzir as diversas etapas da produção de aulas (criação de lives, interação com os alunos, edição de aulas, análise de documentos e slides).',
+          'Contato com colaboradores de diversas áreas do processo de criação e aprimoramento de aulas/plataforma das aulas (programação, produção, entre outros).'
         ]
       }
     ],
     skills: skillsPt,
     education: {
-      institution: 'Universidade ou Instituicao',
-      degree: 'Curso / Formacao',
-      date: 'MM/AAAA',
+      institution: 'Centro Universitário União das Américas Descomplica',
+      degree: 'Ciência da Computação / Bacharelado',
+      date: '03/2026',
       languages: [
-        { name: 'Portugues', level: 'Nativo' },
-        { name: 'Ingles', level: 'Avancado' }
+        { name: 'Português', level: 'Nativo' },
+        { name: 'Inglês', level: 'Intermediário' },
+        { name: 'Espanhol', level: 'Básico' },
       ]
     },
     footer: {
-      copyright: '© 2026 Seu Nome',
-      role: 'Seu Cargo'
+      copyright: '© 2026 Dora Santiago',
+      role: 'UI/UX Designer e Desenvolvedora'
     }
   },
   en: {
     sections: {
       about: 'About',
-      projects: 'Featured Projects',
+      projects: 'Programming Projects',
+      designProjects: 'Design Projects',
       experience: 'Professional Experience',
       stack: 'Technical Stack',
       education: 'Education',
       languages: 'Languages'
     },
     hero: {
-      name: 'Your Name',
-      role: 'Your Primary Role',
-      nationality: 'Your Nationality',
-      location: 'Your City, Country',
-      phone: '+00 000 000 0000',
-      email: 'you@yourdomain.com',
+      name: 'Dora Santiago',
+      role: 'UI/UX Designer and Developer',
+      nationality: 'Brazilian',
+      location: 'Recife, Brazil',
+      phone: '+55 (81) 99144-2781',
+      email: 'dorasantiagoc@gmail.com',
       about: [
-        'Write a short summary about who you are and what problem you solve.',
-        'In the second paragraph, explain your technical specialty and working style.',
-        'In the third paragraph, highlight business impact, leadership, and outcomes.'
+        'Designer and front-end developer, passionate about creating intuitive and creative digital experiences, seeking a collaborative and challenging environment.',
+        'My specialty is developing interfaces and building well-structured digital experiences, using tools like Figma for prototyping and creating Design Systems with Auto Layout. On the development side, I work with HTML, CSS, and JavaScript to transform layouts into functional and responsive interfaces.',
+        'I am also expanding my knowledge in React and beginner-level Python, continuously improving my technical skills to create more efficient and well-structured digital solutions.'
       ]
     },
     actions: {
@@ -177,100 +212,135 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
     projects: [
       {
         id: 'project-one',
-        title: 'Project 01',
-        url: 'https://your-project.com',
-        tagline: 'A short value proposition tagline.',
-        description: 'Describe the project, context, technology choices, and core outcome in one clear sentence.',
+        title: 'Habit Tracker',
+        url: 'https://habit-tracking-web.vercel.app',
+        tagline: 'Simple and intuitive daily habit tracking.',
+        description: 'Web application built with React, Next.js and TypeScript to track daily habits, featuring a responsive interface built with shadcn/ui.',
         bullets: [
-          'Main stack and architecture decisions.',
-          'Most relevant technical challenge and solution.',
-          'Measured outcome delivered by the project.'
+          'Next.js, React and TypeScript with UI built using shadcn/ui.',
+          'Functional application for simple habit management.',
+          'Integration and customization of shadcn/ui components.'
         ]
       },
       {
         id: 'project-two',
-        title: 'Project 02',
-        url: 'https://your-project.com',
-        tagline: 'Digital product focused on scalability.',
-        description: 'Use this space to demonstrate technical depth and product thinking.',
+        title: 'doresenhas',
+        url: 'https://doresenhas.vercel.app',
+        tagline: 'Personal website for organizing and sharing book reviews.',
+        description: 'Website developed with Next.js and TypeScript to organize and display book reviews with simple navigation and clean visual presentation.',
         bullets: [
-          'Automation for a critical business workflow.',
-          'Performance and observability improvements.',
-          'Data-informed user experience enhancements.'
+          'Next.js, TypeScript and Tailwind CSS.',
+          'Functional platform for publishing and browsing book reviews.',
+          'Implementation of component library and personalized interactions in the review cards.'
         ]
       },
       {
         id: 'project-three',
-        title: 'Project 03',
-        url: 'https://your-project.com',
-        tagline: 'Internal tool to accelerate operations.',
-        description: 'Show how you deliver practical and sustainable value.',
+        title: 'Average Calculator',
+        url: 'https://average-tool.vercel.app',
+        tagline: 'Simple tool to track academic averages.',
+        description: 'JavaScript application that allows users to input assignment scores, automatically calculate the final average, and indicate whether the student has passed.',
         bullets: [
-          'Process standardization and reduced rework.',
-          'Integrations with external APIs and services.',
-          'Technical governance and documentation quality.'
+          'JavaScript with front-end calculation logic.',
+          'Functional tool for automatic grade average calculation.',
+          'Implementation of grade calculation logic and input validation.'
         ]
+      }
+    ],
+    designProjects: [
+      {
+        id: 'design-project-one',
+        title: 'Lia: Explorador de Ecossistemas com IA',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=464-4750',
+        tagline: 'Plataforma educacional interativa para explorar ecossistemas com apoio de IA.',
+        description: 'Projeto de UI/UX desenvolvido no Figma para uma plataforma educacional voltada a estudantes do ensino fundamental e médio, com navegação por ecossistemas, interação com IA e sistema de conquistas.',
+        bullets: ['Design de interface no Figma com componentes e Auto Layout.', 
+          'Protótipo completo com fluxo de navegação e telas principais da plataforma.', 
+          'Pesquisa de UX e acessibilidade aplicada ao design da interface.'
+        ]
+      },
+      {
+        id: 'design-project-two',
+        title: 'Tracker',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=324-1702',
+        tagline: 'Dashboard for tracking and analyzing reading habits.',
+        description: 'Web application for registering readings and visualizing metrics such as yearly books, author diversity, and literary categories through an interactive dashboard with full reading management.',
+        bullets: ['Custom-built components and shadcn/ui-based interface.',
+          'Functional dashboard with reading creation, editing, and export features.',
+          'Building components from scratch and implementing the full reading management flow.']
+      },
+      {
+        id: 'design-project-three',
+        title: 'Pricing Page',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=324-1786',
+        tagline: 'Subscription pricing page interface study.',
+        description: 'Design study focused on building a pricing component for a fictional website, presenting three plans with clear visual hierarchy and straightforward navigation.',
+        bullets: ['Custom-built components with shadcn/ui-based interface.',
+          'Reusable component for displaying and comparing pricing plans.',
+          'Building visual hierarchy and components from scratch to improve decision clarity.']
       }
     ],
     experiences: [
       {
-        company: 'Current Company',
-        location: 'Remote / City, Country',
-        role: 'Current Role',
-        period: '01/2024 - Present',
+        company: 'Freelance',
+        location: 'Remote',
+        role: 'UI/UX Designer',
+        period: '08/2024 - Present',
         bullets: [
-          'Led high-impact deliveries across product and engineering.',
-          'Improved reliability through testing, observability, and standards.',
-          'Supported architectural decisions focused on scale and maintainability.'
+          'Developing digital interfaces with a focus on usability and user experience.',
+          'Designing web and mobile screens, with prototyping in Figma and use of design systems.',
+          'Creating and documenting reusable components for consistent interfaces.'
         ]
       },
       {
-        company: 'Previous Company',
-        location: 'City, Country',
-        role: 'Previous Role',
-        period: '01/2022 - 12/2023',
+        company: 'Descomplica',
+        location: 'Remote',
+        role: 'Pedagogical Assistant',
+        period: '06/2021 - 09/2023',
         bullets: [
-          'Built strategic features in close collaboration with product teams.',
-          'Reduced operational cost through technical automation.',
-          'Mentored teammates on engineering best practices.'
+          'Analyzed and edited pedagogical materials. Supported data organization and presentation.',
+          'Assisted in conducting various stages of the lesson production process (creating live sessions, interacting with students, editing lessons, analyzing documents and slides).',
+          'Liaised with collaborators from various areas of the lesson creation and improvement process (programming, production, among others).'
         ]
       }
     ],
     skills: skillsEn,
     education: {
-      institution: 'University or Institution',
-      degree: 'Degree / Program',
-      date: 'MM/YYYY',
+      institution: 'Centro Universitário União das Américas Descomplica',
+      degree: 'Computer Science / Bachelor\'s Degree',
+      date: '03/2026',
       languages: [
-        { name: 'English', level: 'Fluent' },
-        { name: 'Spanish', level: 'Intermediate' }
+        { name: 'Portuguese', level: 'Native' },
+        { name: 'English', level: 'Intermediate' },
+        { name: 'Spanish', level: 'Beginner' }
       ]
     },
     footer: {
-      copyright: '© 2026 Your Name',
-      role: 'Your Role'
+      copyright: '© 2026 Dora Santiago',
+      role: 'UI/UX Designer and Developer'
     }
   },
   es: {
     sections: {
       about: 'Sobre',
-      projects: 'Proyectos Destacados',
+      projects: 'Proyectos de Programación',
+      designProjects: 'Proyectos de Diseño',
       experience: 'Experiencia Profesional',
-      stack: 'Stack Tecnico',
-      education: 'Formacion',
+      stack: 'Stack Técnico',
+      education: 'Formación',
       languages: 'Idiomas'
     },
     hero: {
-      name: 'Tu Nombre',
-      role: 'Tu Rol Principal',
-      nationality: 'Tu Nacionalidad',
-      location: 'Tu Ciudad, Pais',
-      phone: '+00 000 000 0000',
-      email: 'tu@tudominio.com',
+      name: 'Dora Santiago',
+      role: 'Diseñadora UI/UX y Desarrolladora',
+      nationality: 'Brasileña',
+      location: 'Recife, Brasil',
+      phone: '+55 (81) 99144-2781',
+      email: 'dorasantiagoc@gmail.com',
       about: [
-        'Escribe un resumen corto sobre quien eres y que problema resuelves.',
-        'En el segundo parrafo, explica tu especialidad tecnica y forma de trabajo.',
-        'En el tercero, destaca impacto de negocio, liderazgo tecnico y resultados.'
+        'Diseñadora y desarrolladora front-end, apasionada por crear experiencias digitales intuitivas y creativas, en busca de un entorno colaborativo y desafiante.',
+        'Mi especialidad es el desarrollo de interfaces y la creación de experiencias digitales bien estructuradas, utilizando herramientas como Figma para prototipado y la construcción de Design Systems con Auto Layout. En el desarrollo, trabajo con HTML, CSS y JavaScript para transformar diseños en interfaces funcionales y responsivas.',
+        'También estoy ampliando mis conocimientos en React y en Python a nivel inicial, buscando mejorar continuamente mis habilidades técnicas y crear soluciones digitales cada vez más eficientes y bien estructuradas.'
       ]
     },
     actions: {
@@ -280,78 +350,111 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
     projects: [
       {
         id: 'project-one',
-        title: 'Proyecto 01',
-        url: 'https://tu-proyecto.com',
-        tagline: 'Una propuesta de valor clara y corta.',
-        description: 'Describe el proyecto, el contexto, la tecnologia y el resultado clave en una frase.',
+        title: 'Habit Tracker',
+        url: 'https://habit-tracking-web.vercel.app',
+        tagline: 'Seguimiento simple e intuitivo de hábitos diarios.',
+        description: 'Aplicación web desarrollada con React, Next.js y TypeScript para registrar hábitos diarios, con una interfaz responsiva construida con shadcn/ui.',
         bullets: [
-          'Stack principal y decisiones de arquitectura.',
-          'Desafio tecnico mas importante y solucion.',
-          'Resultado medible entregado por el proyecto.'
+          'Next.js, React y TypeScript con interfaz construida con shadcn/ui.',
+          'Aplicación funcional para la gestión simple de hábitos.',
+          'Integración y adaptación de componentes de la biblioteca shadcn/ui.'
         ]
       },
       {
         id: 'project-two',
-        title: 'Proyecto 02',
-        url: 'https://tu-proyecto.com',
-        tagline: 'Producto digital con foco en escalabilidad.',
-        description: 'Usa este espacio para mostrar profundidad tecnica y vision de producto.',
+        title: 'doresenhas',
+        url: 'https://doresenhas.vercel.app',
+        tagline: 'Sitio personal para organizar y compartir reseñas de libros.',
+        description: 'Sitio web desarrollado con Next.js y TypeScript para organizar y mostrar reseñas de libros con navegación simple y presentación visual limpia.',
         bullets: [
-          'Automatizacion de flujo critico del negocio.',
-          'Mejoras de performance y observabilidad.',
-          'Evolucion de experiencia de usuario guiada por datos.'
+          'Next.js, TypeScript y Tailwind CSS.',
+          'Plataforma funcional para publicar y navegar reseñas de libros.',
+          'Implementación de biblioteca de componentes e interacción personalizada en tarjetas.'
         ]
       },
       {
         id: 'project-three',
-        title: 'Proyecto 03',
-        url: 'https://tu-proyecto.com',
-        tagline: 'Herramienta interna para acelerar operaciones.',
-        description: 'Muestra como entregas valor de forma practica y sostenible.',
+        title: 'Average Calculator',
+        url: 'https://average-tool.vercel.app',
+        tagline: 'Calculadora simple para seguir promedios académicos.',
+        description: 'Aplicación en JavaScript que permite ingresar notas de actividades, calcular automáticamente el promedio final e indicar si el estudiante aprobó.',
         bullets: [
-          'Estandarizacion de procesos y reduccion de retrabajo.',
-          'Integraciones con APIs y servicios externos.',
-          'Gobernanza tecnica y documentacion de calidad.'
+          'JavaScript con lógica de cálculo en el front-end.',
+          'Herramienta funcional para el cálculo automático de promedios.',
+          'Implementación de la lógica de cálculo de notas y validación de datos.'
         ]
+      }
+    ],
+    designProjects: [
+      {
+        id: 'design-project-one',
+        title: 'LIA: Explorador de Ecosistemas con IA',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=464-4750',
+        tagline: 'Plataforma educativa interactiva para explorar ecosistemas con apoyo de IA.',
+        description: 'Proyecto de UI/UX diseñado en Figma para una plataforma educativa dirigida a estudiantes de secundaria, con exploración de ecosistemas, interacción con IA y sistema de logros.',
+        bullets: ['Diseño de interfaz en Figma utilizando componentes y Auto Layout.',
+          'Prototipo completo con flujo de navegación y pantallas principales.',
+          'Investigación de UX y accesibilidad aplicada al diseño de la interfaz.']
+      },
+      {
+        id: 'design-project-two',
+        title: 'Tracker',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=324-1702',
+        tagline: 'Dashboard para seguir y analizar hábitos de lectura.',
+        description: 'Aplicación web para registrar lecturas y visualizar métricas como libros por año, diversidad de autoría y categorías literarias mediante un dashboard interactivo con gestión completa de lecturas.',
+        bullets: ['Componentes personalizados e interfaz basada en shadcn/ui.',
+          'Dashboard funcional con creación, edición y exportación de lecturas.',
+          'Creación de componentes desde cero e implementación del flujo completo de gestión de lecturas.']
+      },
+      {
+        id: 'design-project-three',
+        title: 'Pricing Page',
+        url: 'https://www.figma.com/design/5lqilFjCubhj02xl75CbJp/dora-santiago-%7C-portf%C3%B3lio?node-id=324-1786',
+        tagline: 'Estudio de interfaz de página de precios para planes de suscripción.',
+        description: 'Estudio de diseño enfocado en la creación de un componente de pricing para un sitio ficticio, presentando tres planes con jerarquía visual clara y navegación directa.',
+        bullets: ['Componentes personalizados con interfaz basada en shadcn/ui.',
+          'Componente reutilizable para mostrar y comparar planes.',
+          'Construcción de jerarquía visual y componentes desde cero para facilitar la decisión del usuario.']
       }
     ],
     experiences: [
       {
-        company: 'Empresa Actual',
-        location: 'Remoto / Ciudad, Pais',
-        role: 'Rol Actual',
-        period: '01/2024 - Presente',
+        company: 'Freelance',
+        location: 'Remoto',
+        role: 'Diseñadora UI/UX',
+        period: '08/2024 - Presente',
         bullets: [
-          'Lidero entregas de alto impacto entre producto e ingenieria.',
-          'Mejoro confiabilidad con pruebas, observabilidad y estandares.',
-          'Apoyo decisiones de arquitectura con foco en escala y mantenimiento.'
+          'Desarrollo de interfaces digitales con enfoque en usabilidad y experiencia del usuario.',
+          'Diseño de pantallas para web y móvil, con prototipado en Figma y uso de design systems.',
+          'Creación y documentación de componentes reutilizables para interfaces consistentes.'
         ]
       },
       {
-        company: 'Empresa Anterior',
-        location: 'Ciudad, Pais',
-        role: 'Rol Anterior',
-        period: '01/2022 - 12/2023',
+        company: 'Descomplica',
+        location: 'Remoto',
+        role: 'Asistente Pedagógica',
+        period: '06/2021 - 09/2023',
         bullets: [
-          'Construyo funcionalidades estrategicas junto a producto.',
-          'Reduzco costos operativos mediante automatizaciones.',
-          'Mentoreo al equipo en buenas practicas de desarrollo.'
+          'Análisis y edición de materiales pedagógicos. Apoyo en la organización y presentación de datos.',
+          'Asistencia en la conducción de las diversas etapas del proceso de producción de clases (creación de lives, interacción con los alumnos, edición de clases, análisis de documentos y diapositivas).',
+          'Contacto con colaboradores de diversas áreas del proceso de creación y mejora de clases/plataforma (programación, producción, entre otros).'
         ]
       }
     ],
     skills: skillsEs,
     education: {
-      institution: 'Universidad o Institucion',
-      degree: 'Carrera / Programa',
-      date: 'MM/AAAA',
+      institution: 'Centro Universitário União das Américas Descomplica',
+      degree: 'Ciencia de la Computación / Bachillerato',
+      date: '03/2026',
       languages: [
-        { name: 'Espanol', level: 'Nativo' },
-        { name: 'Ingles', level: 'Avanzado' }
+        { name: 'Portugués', level: 'Nativo' },
+        { name: 'Ingles', level: 'Intermedio' },
+        { name: 'Español', level: 'Básico' }
       ]
     },
     footer: {
-      copyright: '© 2026 Tu Nombre',
-      role: 'Tu Rol'
+      copyright: '© 2026 Dora Santiago',
+      role: 'Diseñadora UI/UX y Desarrolladora'
     }
   }
 };

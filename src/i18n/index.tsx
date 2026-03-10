@@ -12,7 +12,8 @@ const detectLocale = (): Locale => {
 };
 
 export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [locale, setLocale] = useState<Locale>(() => detectLocale());
+  // Always start in the default locale (Portuguese), independent of browser language
+  const [locale, setLocale] = useState<Locale>(() => DEFAULT_LOCALE);
 
   useEffect(() => {
     document.documentElement.lang = locale;

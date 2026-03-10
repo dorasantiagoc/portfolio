@@ -33,6 +33,7 @@ export interface TranslationContent {
   sections: {
     about: string;
     projects: string;
+    designProjects: string;
     experience: string;
     stack: string;
     education: string;
@@ -52,6 +53,7 @@ export interface TranslationContent {
     languageLabel: string;
   };
   projects: Project[];
+  designProjects: Project[];
   experiences: WorkExperience[];
   skills: string[];
   education: Education & {
